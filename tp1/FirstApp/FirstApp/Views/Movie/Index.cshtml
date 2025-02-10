@@ -1,0 +1,20 @@
+﻿
+@{
+}
+
+@model List<FirstApp.Models.Movie>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    @foreach(var m in Model){
+        <p>@m.id : @m.Name</p>
+    }
+</body>
+</html>
