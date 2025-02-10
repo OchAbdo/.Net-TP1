@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PEoNBp0UJGk=",
+  "dgSpecHash": "r9mAzPFOXjw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ochab\\Desktop\\tp1\\FirstApp\\FirstApp\\FirstApp.csproj",
+  "projectFilePath": "C:\\Users\\ochab\\Desktop\\.Net-TP1\\tp1\\FirstApp\\FirstApp\\FirstApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ochab\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\ochab\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

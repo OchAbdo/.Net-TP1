@@ -1,5 +1,8 @@
-﻿@model FirstApp.Models.Customer ;
+﻿@model FirstApp.Models.FilmCostumer;
 
 <div>
-	<p>@Model.Name : @Model.Id</p>
+	@foreach (var cus in Model.Customer){
+	<a href="/Movie/Affich/@cus.Id">@cus.Id</a>
+	<h1>@Html.ActionLink(cus.Name , "Affich" , "Movie" , new{id = cus.Id} , null)</h1>
+	}
 </div>

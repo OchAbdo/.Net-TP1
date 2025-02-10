@@ -16,14 +16,10 @@ namespace FirstApp.Controllers
             return View(movies);
         }
 
-        public IActionResult Affich() 
+        public IActionResult Affich(int id) 
         {
-            List<Movie> ms = new List<Movie>()
-            {
-                new Movie(3 , "movie3"),
-                new Movie(4 , "moviz4")
-            };
-            return View(ms);
+           var ss =  lfilm.Customer.FirstOrDefault(ss =>  ss.Id == id);
+            return View(ss);
         }
 
         public IActionResult Edit(int id) 
@@ -37,19 +33,17 @@ namespace FirstApp.Controllers
             return Content($"{year}/{month}");
         }
 
-        public IActionResult ListFilm(int id) 
-        {
-            Movie m1 = new Movie(1, "movie1");
-            List<Customer> l = new List<Customer>()
+            FilmCostumer lfilm = new FilmCostumer(new Movie(1, "movie1") , new List<Customer>()
             {
                 new Customer(1 , "cus1"),
                 new Customer(2 , "cus2"),
                 new Customer(3 , "cus3")
-            };
-            FilmCostumer lfilm = new FilmCostumer(m1 , l);
-            Customer k = lfilm.Customer[id];
+            });
+        public IActionResult ListFilm() 
+        {
+            //Customer k = lfilm.Customer[id];
 
-            return View(k);
+            return View(lfilm);
         }
 
 
